@@ -55,7 +55,6 @@ class QualificationControllerTest {
     return robot.lookup("#choiceBoxVerdict").queryAs(ChoiceBox.class);
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(1)
   void le_tableview_est_alimente_par_les_sequences_de_la_nuit(FxRobot robot) {
@@ -68,7 +67,6 @@ class QualificationControllerTest {
         .hasSize(10);
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(2)
   void le_panneau_de_detail_invite_a_selectionner_une_sequence_au_demarrage(FxRobot robot) {
@@ -88,7 +86,6 @@ class QualificationControllerTest {
         .isTrue();
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(4)
   void selectionner_une_sequence_active_le_bouton_ecouter_et_met_a_jour_le_panneau_de_detail(
@@ -106,7 +103,6 @@ class QualificationControllerTest {
         .contains("kHz");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(5)
   void cliquer_sur_ecouter_passe_le_statut_de_la_sequence_selectionnee_a_ecoutee(FxRobot robot) {
@@ -123,7 +119,6 @@ class QualificationControllerTest {
         .isEqualTo("Écoutée");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(6)
   void le_choicebox_de_verdict_propose_ok_douteux_et_a_jeter(FxRobot robot) {
@@ -143,7 +138,6 @@ class QualificationControllerTest {
         .isEqualTo("Verdict global : (à saisir)");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(8)
   void cliquer_sur_enregistrer_verdict_alimente_le_modele_et_met_a_jour_le_label(FxRobot robot) {
@@ -157,7 +151,6 @@ class QualificationControllerTest {
         .isEqualTo("Verdict global : Douteux");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(9)
   void la_zone_de_commentaire_est_liee_au_modele_de_maniere_bidirectionnelle(FxRobot robot) {
